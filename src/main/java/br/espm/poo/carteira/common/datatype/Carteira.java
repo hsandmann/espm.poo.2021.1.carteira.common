@@ -1,18 +1,23 @@
 package br.espm.poo.carteira.common.datatype;
 
+import br.espm.poo.auth.common.datatype.Usuario;
+
 import java.math.BigDecimal;
 import java.util.List;
 
 public class Carteira {
 
     private String id;
-    //TODO:
-    // private Usuario usuario;
+    private Usuario usuario;
     private BigDecimal saldo;
     private List<TransacaoCambio> transacoesCambio;
 
     public String getId() {
         return id;
+    }
+
+    public Usuario getUsuario() {
+        return usuario;
     }
 
     public BigDecimal getSaldo() {
@@ -25,6 +30,10 @@ public class Carteira {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
 
     public void setSaldo(BigDecimal saldo) {
