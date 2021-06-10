@@ -2,6 +2,7 @@ package br.espm.poo.carteira.common.datatype;
 
 import br.espm.poo.cambio.common.datatype.Cotacao;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class TransacaoCambio {
@@ -10,7 +11,7 @@ public class TransacaoCambio {
     private Carteira carteira;
     private Cotacao cotacao;
     private Date data;
-    private Double quantidade;
+    private BigDecimal quantidade;
 
     public String getId() {
         return id;
@@ -28,7 +29,7 @@ public class TransacaoCambio {
         return data;
     }
 
-    public Double getQuantidade() {
+    public BigDecimal getQuantidade() {
         return quantidade;
     }
 
@@ -48,7 +49,7 @@ public class TransacaoCambio {
         this.data = data;
     }
 
-    public void setQuantidade(Double quantidade) {
+    public void setQuantidade(BigDecimal quantidade) {
         this.quantidade = quantidade;
     }
 

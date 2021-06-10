@@ -1,5 +1,6 @@
 package br.espm.poo.carteira.common.datatype;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public class Carteira {
@@ -7,14 +8,14 @@ public class Carteira {
     private String id;
     //TODO:
     // private Usuario usuario;
-    private Double saldo;
+    private BigDecimal saldo;
     private List<TransacaoCambio> transacoesCambio;
 
     public String getId() {
         return id;
     }
 
-    public Double getSaldo() {
+    public BigDecimal getSaldo() {
         return saldo;
     }
 
@@ -26,7 +27,7 @@ public class Carteira {
         this.id = id;
     }
 
-    public void setSaldo(Double saldo) {
+    public void setSaldo(BigDecimal saldo) {
         this.saldo = saldo;
     }
 
