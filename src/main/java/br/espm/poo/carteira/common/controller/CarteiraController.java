@@ -29,13 +29,13 @@ public interface CarteiraController {
             @RequestBody TransacaoBean bean
     );
 
-    @PostMapping("carteiras/{id}/cambio/vender")
+    @PostMapping("carteiras/{idCarteira}/cambio/vender")
     TransacaoCambio cambioVender(
-            @PathVariable String id,
+            @PathVariable String idCarteira,
             @RequestBody TransacaoBean bean
     );
 
-//    @GetMapping("carteiras/{id}/ativo/comprar")
-//    TransacaoAtivo carteira(String id);
+//    @GetMapping("carteiras/{idCarteira}/ativo/comprar")
+//    TransacaoAtivo carteira(String idCarteira);
 
 }
