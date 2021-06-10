@@ -24,10 +24,16 @@ public interface CarteiraController {
     Carteira create(@RequestBody Carteira carteira);
 
     @PostMapping("carteiras/{id}/cambio/comprar")
-    TransacaoCambio cambioComprar(@RequestBody TransacaoBean bean);
+    TransacaoCambio cambioComprar(
+            @PathVariable String id,
+            @RequestBody TransacaoBean bean
+    );
 
     @PostMapping("carteiras/{id}/cambio/vender")
-    TransacaoCambio cambioVender(@RequestBody TransacaoBean bean);
+    TransacaoCambio cambioVender(
+            @PathVariable String id,
+            @RequestBody TransacaoBean bean
+    );
 
 //    @GetMapping("carteiras/{id}/ativo/comprar")
 //    TransacaoAtivo carteira(String id);
