@@ -23,9 +23,9 @@ public interface CarteiraController {
     @PostMapping("carteiras")
     Carteira create(@RequestBody Carteira carteira);
 
-    @PostMapping("carteiras/{id}/cambio/comprar")
+    @PostMapping("carteiras/{idCarteira}/cambio/comprar")
     TransacaoCambio cambioComprar(
-            @PathVariable String id,
+            @PathVariable String idCarteira,
             @RequestBody TransacaoBean bean
     );
 
