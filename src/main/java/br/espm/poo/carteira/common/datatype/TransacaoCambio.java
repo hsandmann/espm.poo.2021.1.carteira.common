@@ -12,6 +12,7 @@ public class TransacaoCambio {
     private Cotacao cotacao;
     private Date data;
     private BigDecimal quantidade;
+    private TransacaoTipo tipo;
 
     public String getId() {
         return id;
@@ -33,6 +34,10 @@ public class TransacaoCambio {
         return quantidade;
     }
 
+    public TransacaoTipo getTipo() {
+        return tipo;
+    }
+
     public void setId(String id) {
         this.id = id;
     }
@@ -51,6 +56,10 @@ public class TransacaoCambio {
 
     public void setQuantidade(BigDecimal quantidade) {
         this.quantidade = quantidade;
+    }
+
+    public void setTipo(TransacaoTipo tipo) {
+        this.tipo = tipo;
     }
 
 }
